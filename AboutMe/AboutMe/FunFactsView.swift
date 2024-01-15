@@ -24,6 +24,7 @@ struct FunFactsView: View {
             Text("FunFacts")
                 .font(.largeTitle)
                 .bold()
+                // .font(.largeTitle.bold()) 이렇게도 쓸 수 있다.
                 .padding()
             
             Text(funFact)
