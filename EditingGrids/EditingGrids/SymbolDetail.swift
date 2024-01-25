@@ -10,7 +10,6 @@ import SwiftUI
 struct SymbolDetail: View {
     var body: some View {
         VStack {
-            
         }
     }
 }
