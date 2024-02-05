@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7D44D6562B6F8BC800B9C1BF /* ImageGalleryApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6552B6F8BC800B9C1BF /* ImageGalleryApp.swift */; };
+		7D44D6582B6F8BC800B9C1BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6572B6F8BC800B9C1BF /* ContentView.swift */; };
+		7D44D65A2B6F8BC900B9C1BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6592B6F8BC900B9C1BF /* Assets.xcassets */; };
+		7D44D65D2B6F8BC900B9C1BF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D65C2B6F8BC900B9C1BF /* Preview Assets.xcassets */; };
+		7D44D6642B6F8DE300B9C1BF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6632B6F8DE300B9C1BF /* DataModel.swift */; };
+		7D44D6662B6F8E5800B9C1BF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6652B6F8E5800B9C1BF /* Item.swift */; };
+		7D44D6682B6F8E9400B9C1BF /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6672B6F8E9400B9C1BF /* FileManager+.swift */; };
+		7D44D66A2B6F964900B9C1BF /* ImageDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6692B6F964800B9C1BF /* ImageDetailView.swift */; };
+		7D44D6822B6F99AB00B9C1BF /* groundSquirrel.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D66C2B6F99AB00B9C1BF /* groundSquirrel.jpg */; };
+		7D44D6832B6F99AB00B9C1BF /* yellowBelliedMarmot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D66D2B6F99AB00B9C1BF /* yellowBelliedMarmot.jpg */; };
+		7D44D6842B6F99AB00B9C1BF /* bullTuleElkAndTwoFemales.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D66E2B6F99AB00B9C1BF /* bullTuleElkAndTwoFemales.jpg */; };
+		7D44D6852B6F99AB00B9C1BF /* soaringTheRainbow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D66F2B6F99AB00B9C1BF /* soaringTheRainbow.jpg */; };
+		7D44D6862B6F99AB00B9C1BF /* harborSealPup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6702B6F99AB00B9C1BF /* harborSealPup.jpg */; };
+		7D44D6872B6F99AB00B9C1BF /* grizzlyCubs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6712B6F99AB00B9C1BF /* grizzlyCubs.jpg */; };
+		7D44D6882B6F99AB00B9C1BF /* redTailedHawk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6722B6F99AB00B9C1BF /* redTailedHawk.jpg */; };
+		7D44D6892B6F99AB00B9C1BF /* doubleRainbowLowerMammoth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6732B6F99AB00B9C1BF /* doubleRainbowLowerMammoth.jpg */; };
+		7D44D68A2B6F99AB00B9C1BF /* newGrowthOfAntlers.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6742B6F99AB00B9C1BF /* newGrowthOfAntlers.jpg */; };
+		7D44D68B2B6F99AB00B9C1BF /* harborSeal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6752B6F99AB00B9C1BF /* harborSeal.jpg */; };
+		7D44D68C2B6F99AB00B9C1BF /* sunriseAtGrottoGeyser.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6762B6F99AB00B9C1BF /* sunriseAtGrottoGeyser.jpg */; };
+		7D44D68D2B6F99AB00B9C1BF /* owlsAtMammoth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6772B6F99AB00B9C1BF /* owlsAtMammoth.jpg */; };
+		7D44D68E2B6F99AB00B9C1BF /* heartSpring.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6782B6F99AB00B9C1BF /* heartSpring.jpg */; };
+		7D44D68F2B6F99AB00B9C1BF /* bobcat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6792B6F99AB00B9C1BF /* bobcat.jpg */; };
+		7D44D6902B6F99AB00B9C1BF /* doubleRainbowYellowstone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D67A2B6F99AB00B9C1BF /* doubleRainbowYellowstone.jpg */; };
+		7D44D6912B6F99AB00B9C1BF /* bullElk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D67B2B6F99AB00B9C1BF /* bullElk.jpg */; };
+		7D44D6922B6F99AB00B9C1BF /* coyoteAndBison.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D67C2B6F99AB00B9C1BF /* coyoteAndBison.jpg */; };
+		7D44D6932B6F99AB00B9C1BF /* riverOtter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D67D2B6F99AB00B9C1BF /* riverOtter.jpg */; };
+		7D44D6942B6F99AB00B9C1BF /* bullElkSparring.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D67E2B6F99AB00B9C1BF /* bullElkSparring.jpg */; };
+		7D44D6952B6F99AB00B9C1BF /* grizzly.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D67F2B6F99AB00B9C1BF /* grizzly.jpg */; };
+		7D44D6962B6F99AB00B9C1BF /* towerCreekBASIN.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6802B6F99AB00B9C1BF /* towerCreekBASIN.jpg */; };
+		7D44D6972B6F99AB00B9C1BF /* rainbowAndBadlands.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7D44D6812B6F99AB00B9C1BF /* rainbowAndBadlands.jpg */; };
+		7D44D6992B6F9B0F00B9C1BF /* ImageGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D6982B6F9B0F00B9C1BF /* ImageGrid.swift */; };
+		7D44D69B2B6F9BDE00B9C1BF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D69A2B6F9BDE00B9C1BF /* ImagePicker.swift */; };
+		7D44D69D2B6FA2EC00B9C1BF /* GridItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D44D69C2B6FA2EC00B9C1BF /* GridItemView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7D44D6522B6F8BC800B9C1BF /* ImageGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D44D6552B6F8BC800B9C1BF /* ImageGalleryApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGalleryApp.swift; sourceTree = "<group>"; };
+		7D44D6572B6F8BC800B9C1BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7D44D6592B6F8BC900B9C1BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7D44D65C2B6F8BC900B9C1BF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7D44D6632B6F8DE300B9C1BF /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		7D44D6652B6F8E5800B9C1BF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7D44D6672B6F8E9400B9C1BF /* FileManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
+		7D44D6692B6F964800B9C1BF /* ImageDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailView.swift; sourceTree = "<group>"; };
+		7D44D66C2B6F99AB00B9C1BF /* groundSquirrel.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = groundSquirrel.jpg; sourceTree = "<group>"; };
+		7D44D66D2B6F99AB00B9C1BF /* yellowBelliedMarmot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = yellowBelliedMarmot.jpg; sourceTree = "<group>"; };
+		7D44D66E2B6F99AB00B9C1BF /* bullTuleElkAndTwoFemales.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bullTuleElkAndTwoFemales.jpg; sourceTree = "<group>"; };
+		7D44D66F2B6F99AB00B9C1BF /* soaringTheRainbow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = soaringTheRainbow.jpg; sourceTree = "<group>"; };
+		7D44D6702B6F99AB00B9C1BF /* harborSealPup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harborSealPup.jpg; sourceTree = "<group>"; };
+		7D44D6712B6F99AB00B9C1BF /* grizzlyCubs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grizzlyCubs.jpg; sourceTree = "<group>"; };
+		7D44D6722B6F99AB00B9C1BF /* redTailedHawk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redTailedHawk.jpg; sourceTree = "<group>"; };
+		7D44D6732B6F99AB00B9C1BF /* doubleRainbowLowerMammoth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doubleRainbowLowerMammoth.jpg; sourceTree = "<group>"; };
+		7D44D6742B6F99AB00B9C1BF /* newGrowthOfAntlers.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = newGrowthOfAntlers.jpg; sourceTree = "<group>"; };
+		7D44D6752B6F99AB00B9C1BF /* harborSeal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = harborSeal.jpg; sourceTree = "<group>"; };
+		7D44D6762B6F99AB00B9C1BF /* sunriseAtGrottoGeyser.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sunriseAtGrottoGeyser.jpg; sourceTree = "<group>"; };
+		7D44D6772B6F99AB00B9C1BF /* owlsAtMammoth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = owlsAtMammoth.jpg; sourceTree = "<group>"; };
+		7D44D6782B6F99AB00B9C1BF /* heartSpring.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = heartSpring.jpg; sourceTree = "<group>"; };
+		7D44D6792B6F99AB00B9C1BF /* bobcat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bobcat.jpg; sourceTree = "<group>"; };
+		7D44D67A2B6F99AB00B9C1BF /* doubleRainbowYellowstone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = doubleRainbowYellowstone.jpg; sourceTree = "<group>"; };
+		7D44D67B2B6F99AB00B9C1BF /* bullElk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bullElk.jpg; sourceTree = "<group>"; };
+		7D44D67C2B6F99AB00B9C1BF /* coyoteAndBison.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coyoteAndBison.jpg; sourceTree = "<group>"; };
+		7D44D67D2B6F99AB00B9C1BF /* riverOtter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = riverOtter.jpg; sourceTree = "<group>"; };
+		7D44D67E2B6F99AB00B9C1BF /* bullElkSparring.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bullElkSparring.jpg; sourceTree = "<group>"; };
+		7D44D67F2B6F99AB00B9C1BF /* grizzly.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = grizzly.jpg; sourceTree = "<group>"; };
+		7D44D6802B6F99AB00B9C1BF /* towerCreekBASIN.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = towerCreekBASIN.jpg; sourceTree = "<group>"; };
+		7D44D6812B6F99AB00B9C1BF /* rainbowAndBadlands.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rainbowAndBadlands.jpg; sourceTree = "<group>"; };
+		7D44D6982B6F9B0F00B9C1BF /* ImageGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGrid.swift; sourceTree = "<group>"; };
+		7D44D69A2B6F9BDE00B9C1BF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		7D44D69C2B6FA2EC00B9C1BF /* GridItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridItemView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7D44D64F2B6F8BC800B9C1BF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7D44D6492B6F8BC800B9C1BF = {
+			isa = PBXGroup;
+			children = (
+				7D44D6542B6F8BC800B9C1BF /* ImageGallery */,
+				7D44D6532B6F8BC800B9C1BF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7D44D6532B6F8BC800B9C1BF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7D44D6522B6F8BC800B9C1BF /* ImageGallery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7D44D6542B6F8BC800B9C1BF /* ImageGallery */ = {
+			isa = PBXGroup;
+			children = (
+				7D44D6552B6F8BC800B9C1BF /* ImageGalleryApp.swift */,
+				7D44D6572B6F8BC800B9C1BF /* ContentView.swift */,
+				7D44D66B2B6F99AB00B9C1BF /* Resources */,
+				7D44D6592B6F8BC900B9C1BF /* Assets.xcassets */,
+				7D44D65B2B6F8BC900B9C1BF /* Preview Content */,
+				7D44D6632B6F8DE300B9C1BF /* DataModel.swift */,
+				7D44D6652B6F8E5800B9C1BF /* Item.swift */,
+				7D44D6672B6F8E9400B9C1BF /* FileManager+.swift */,
+				7D44D6692B6F964800B9C1BF /* ImageDetailView.swift */,
+				7D44D6982B6F9B0F00B9C1BF /* ImageGrid.swift */,
+				7D44D69A2B6F9BDE00B9C1BF /* ImagePicker.swift */,
+				7D44D69C2B6FA2EC00B9C1BF /* GridItemView.swift */,
+			);
+			path = ImageGallery;
+			sourceTree = "<group>";
+		};
+		7D44D65B2B6F8BC900B9C1BF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7D44D65C2B6F8BC900B9C1BF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7D44D66B2B6F99AB00B9C1BF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7D44D66C2B6F99AB00B9C1BF /* groundSquirrel.jpg */,
+				7D44D66D2B6F99AB00B9C1BF /* yellowBelliedMarmot.jpg */,
+				7D44D66E2B6F99AB00B9C1BF /* bullTuleElkAndTwoFemales.jpg */,
+				7D44D66F2B6F99AB00B9C1BF /* soaringTheRainbow.jpg */,
+				7D44D6702B6F99AB00B9C1BF /* harborSealPup.jpg */,
+				7D44D6712B6F99AB00B9C1BF /* grizzlyCubs.jpg */,
+				7D44D6722B6F99AB00B9C1BF /* redTailedHawk.jpg */,
+				7D44D6732B6F99AB00B9C1BF /* doubleRainbowLowerMammoth.jpg */,
+				7D44D6742B6F99AB00B9C1BF /* newGrowthOfAntlers.jpg */,
+				7D44D6752B6F99AB00B9C1BF /* harborSeal.jpg */,
+				7D44D6762B6F99AB00B9C1BF /* sunriseAtGrottoGeyser.jpg */,
+				7D44D6772B6F99AB00B9C1BF /* owlsAtMammoth.jpg */,
+				7D44D6782B6F99AB00B9C1BF /* heartSpring.jpg */,
+				7D44D6792B6F99AB00B9C1BF /* bobcat.jpg */,
+				7D44D67A2B6F99AB00B9C1BF /* doubleRainbowYellowstone.jpg */,
+				7D44D67B2B6F99AB00B9C1BF /* bullElk.jpg */,
+				7D44D67C2B6F99AB00B9C1BF /* coyoteAndBison.jpg */,
+				7D44D67D2B6F99AB00B9C1BF /* riverOtter.jpg */,
+				7D44D67E2B6F99AB00B9C1BF /* bullElkSparring.jpg */,
+				7D44D67F2B6F99AB00B9C1BF /* grizzly.jpg */,
+				7D44D6802B6F99AB00B9C1BF /* towerCreekBASIN.jpg */,
+				7D44D6812B6F99AB00B9C1BF /* rainbowAndBadlands.jpg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D44D6512B6F8BC800B9C1BF /* ImageGallery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7D44D6602B6F8BC900B9C1BF /* Build configuration list for PBXNativeTarget "ImageGallery" */;
+			buildPhases = (
+				7D44D64E2B6F8BC800B9C1BF /* Sources */,
+				7D44D64F2B6F8BC800B9C1BF /* Frameworks */,
+				7D44D6502B6F8BC800B9C1BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageGallery;
+			productName = ImageGallery;
+			productReference = 7D44D6522B6F8BC800B9C1BF /* ImageGallery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7D44D64A2B6F8BC800B9C1BF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
+				TargetAttributes = {
+					7D44D6512B6F8BC800B9C1BF = {
+						CreatedOnToolsVersion = 15.1;
+					};
+				};
+			};
+			buildConfigurationList = 7D44D64D2B6F8BC800B9C1BF /* Build configuration list for PBXProject "ImageGallery" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7D44D6492B6F8BC800B9C1BF;
+			productRefGroup = 7D44D6532B6F8BC800B9C1BF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D44D6512B6F8BC800B9C1BF /* ImageGallery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7D44D6502B6F8BC800B9C1BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D44D6852B6F99AB00B9C1BF /* soaringTheRainbow.jpg in Resources */,
+				7D44D6822B6F99AB00B9C1BF /* groundSquirrel.jpg in Resources */,
+				7D44D68E2B6F99AB00B9C1BF /* heartSpring.jpg in Resources */,
+				7D44D6932B6F99AB00B9C1BF /* riverOtter.jpg in Resources */,
+				7D44D6842B6F99AB00B9C1BF /* bullTuleElkAndTwoFemales.jpg in Resources */,
+				7D44D68F2B6F99AB00B9C1BF /* bobcat.jpg in Resources */,
+				7D44D6922B6F99AB00B9C1BF /* coyoteAndBison.jpg in Resources */,
+				7D44D6942B6F99AB00B9C1BF /* bullElkSparring.jpg in Resources */,
+				7D44D6912B6F99AB00B9C1BF /* bullElk.jpg in Resources */,
+				7D44D68D2B6F99AB00B9C1BF /* owlsAtMammoth.jpg in Resources */,
+				7D44D68A2B6F99AB00B9C1BF /* newGrowthOfAntlers.jpg in Resources */,
+				7D44D6952B6F99AB00B9C1BF /* grizzly.jpg in Resources */,
+				7D44D68C2B6F99AB00B9C1BF /* sunriseAtGrottoGeyser.jpg in Resources */,
+				7D44D6962B6F99AB00B9C1BF /* towerCreekBASIN.jpg in Resources */,
+				7D44D6882B6F99AB00B9C1BF /* redTailedHawk.jpg in Resources */,
+				7D44D65D2B6F8BC900B9C1BF /* Preview Assets.xcassets in Resources */,
+				7D44D6902B6F99AB00B9C1BF /* doubleRainbowYellowstone.jpg in Resources */,
+				7D44D65A2B6F8BC900B9C1BF /* Assets.xcassets in Resources */,
+				7D44D6832B6F99AB00B9C1BF /* yellowBelliedMarmot.jpg in Resources */,
+				7D44D6972B6F99AB00B9C1BF /* rainbowAndBadlands.jpg in Resources */,
+				7D44D68B2B6F99AB00B9C1BF /* harborSeal.jpg in Resources */,
+				7D44D6892B6F99AB00B9C1BF /* doubleRainbowLowerMammoth.jpg in Resources */,
+				7D44D6872B6F99AB00B9C1BF /* grizzlyCubs.jpg in Resources */,
+				7D44D6862B6F99AB00B9C1BF /* harborSealPup.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7D44D64E2B6F8BC800B9C1BF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D44D69D2B6FA2EC00B9C1BF /* GridItemView.swift in Sources */,
+				7D44D6662B6F8E5800B9C1BF /* Item.swift in Sources */,
+				7D44D6582B6F8BC800B9C1BF /* ContentView.swift in Sources */,
+				7D44D6562B6F8BC800B9C1BF /* ImageGalleryApp.swift in Sources */,
+				7D44D6682B6F8E9400B9C1BF /* FileManager+.swift in Sources */,
+				7D44D6992B6F9B0F00B9C1BF /* ImageGrid.swift in Sources */,
+				7D44D69B2B6F9BDE00B9C1BF /* ImagePicker.swift in Sources */,
+				7D44D6642B6F8DE300B9C1BF /* DataModel.swift in Sources */,
+				7D44D66A2B6F964900B9C1BF /* ImageDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7D44D65E2B6F8BC900B9C1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7D44D65F2B6F8BC900B9C1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7D44D6612B6F8BC900B9C1BF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageGallery/Preview Content\"";
+				DEVELOPMENT_TEAM = B36234Y8A9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.9min0.ImageGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7D44D6622B6F8BC900B9C1BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ImageGallery/Preview Content\"";
+				DEVELOPMENT_TEAM = B36234Y8A9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.9min0.ImageGallery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7D44D64D2B6F8BC800B9C1BF /* Build configuration list for PBXProject "ImageGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D44D65E2B6F8BC900B9C1BF /* Debug */,
+				7D44D65F2B6F8BC900B9C1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7D44D6602B6F8BC900B9C1BF /* Build configuration list for PBXNativeTarget "ImageGallery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7D44D6612B6F8BC900B9C1BF /* Debug */,
+				7D44D6622B6F8BC900B9C1BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7D44D64A2B6F8BC800B9C1BF /* Project object */;
+}
