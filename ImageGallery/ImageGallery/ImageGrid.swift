@@ -36,29 +36,30 @@ struct ImageGrid: View {
             ScrollView {
                 LazyVGrid(columns: gridItems) {
                     ForEach(data.items) { item in
-                        NavigationLink(destination: ImageDetailView(item: item)) {
-                            ZStack(alignment: .topTrailing) {
-                                //GeometryReader { geo in ImageDetailView(item: item)) {
-                                GridItemView(item: item, size: 110)
-                                    .clipShape(RoundedRectangle(cornerRadius: 8))
-                                    .aspectRatio(1, contentMode: .fit)
-                                
-                                if isEditing {
-                                    Button {
-                                        withAnimation {data.remove(item)
-                                        }
-                                    } label: {
-                                        Image(systemName: "xmark.square.fill")
-                                            .font(.system(size: 25))
-                                            .foregroundStyle(.white, .red)
-                                            .padding(.top, -7)
+                        
+                        GeometryReader { geo in
+                            NavigationLink(destination: ImageDetailView(item: item)) {
+                                GridItemView(item: item, size: geo.size.width)
+                            }
+                        }
+                        .clipShape(RoundedRectangle(cornerRadius: 8))
+                        .aspectRatio(1, contentMode: .fit)
+                        .overlay(alignment: .topTrailing) {
+                            if isEditing {
+                                Button {
+                                    withAnimation {data.remove(item)
                                     }
+                                } label: {
+                                    Image(systemName: "xmark.square.fill")
+                                        .font(.system(size: 25))
+                                        .foregroundStyle(.white, .red)
+                                        .padding(.top, -7)
                                 }
                             }
-                            .padding()
                         }
                     }
                 }
+                .padding()
             }
         }
         .navigationTitle("Image Gallery")
