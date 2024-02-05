@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ImageGrid: View {
-    @State private var data = DataModel()
+    @EnvironmentObject var data: DataModel
     @State private var selectedImage: Item?
     
     private static let initialColumnCount = 3
@@ -36,14 +36,13 @@ struct ImageGrid: View {
             ScrollView {
                 LazyVGrid(columns: gridItems) {
                     ForEach(data.items) { item in
-                        
                         GeometryReader { geo in
                             NavigationLink(destination: ImageDetailView(item: item)) {
                                 GridItemView(item: item, size: geo.size.width)
                             }
                         }
                         .clipShape(RoundedRectangle(cornerRadius: 8))
-                        .aspectRatio(1, contentMode: .fit)
+                        .aspectRatio(contentMode: .fit)
                         .overlay(alignment: .topTrailing) {
                             if isEditing {
                                 Button {
@@ -97,5 +96,5 @@ struct ImageGrid: View {
 }
 
 #Preview {
-    ImageGrid()
+    ImageGrid().environmentObject(DataModel())
 }

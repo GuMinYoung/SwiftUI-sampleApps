@@ -9,7 +9,7 @@ import SwiftUI
 import PhotosUI
 
 struct ImagePicker: UIViewControllerRepresentable {
-    @EnvironmentObject var model: DataModel
+    @EnvironmentObject var data: DataModel
     
 //    /// A dismiss action provided by the environment. This may be called to dismiss this view controller.
 //    @Environment(\.dismiss) var dismiss
@@ -65,7 +65,7 @@ class Coordinator: NSObject, UINavigationControllerDelegate, PHPickerViewControl
             } else if let url = url {
                 if let savedUrl = FileManager.default.copyItemToDocumentDirectory(from: url) {
                     // Add the new item to the data model.
-                    Task { @MainActor [dataModel = self.parent.model] in
+                    Task { @MainActor [dataModel = self.parent.data] in
                         withAnimation {
                             let item = Item(url: savedUrl)
                             dataModel.insert(item)

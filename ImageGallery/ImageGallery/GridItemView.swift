@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GridItemView: View {
     let item: Item
-    let size: Double
+    let size: CGFloat
     
     var body: some View {
         AsyncImage(url: item.url) {
