@@ -13,9 +13,8 @@ struct ImageDetailView: View {
     
     var body: some View {
         AsyncImage(url: item.url) {
-            image in
-            image.resizable()
-            image.scaledToFit()
+            $0.resizable()
+              .scaledToFit()
         } placeholder: {
             ProgressView()
         }

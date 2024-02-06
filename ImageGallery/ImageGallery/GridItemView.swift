@@ -13,13 +13,12 @@ struct GridItemView: View {
     
     var body: some View {
         AsyncImage(url: item.url) {
-            image in
-            image.resizable()
-            image.scaledToFit()
+            $0.resizable()
+              .scaledToFill()
         } placeholder: {
             ProgressView()
         }
-        .frame(width: size, height: size)
+        .frame(width: size, height: size)   // 지우면 ImageGrid에서 이미지 로딩할 때 뜨는 인디케이터가 아이템(각 이미지) 좌측 상단에 뜸
     }
 }
 
