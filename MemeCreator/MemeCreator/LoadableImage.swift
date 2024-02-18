@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LoadableImage: View {
+    @Binding var isLoading: Bool
     var imageMetadata: Panda
     
     var body: some View {
@@ -40,5 +41,5 @@ struct LoadableImage: View {
 }
 
 #Preview {
-    LoadableImage(imageMetadata: Panda.defaultPanda)
+    LoadableImage(isLoading: .constant(true), imageMetadata: Panda.defaultPanda)
 }

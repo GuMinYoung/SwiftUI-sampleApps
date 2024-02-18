@@ -14,13 +14,18 @@ struct TextInfo {
 }
 
 struct MemeCreator: View {
+    @EnvironmentObject var fetcher: ImageFetcher
     @State private var text = TextInfo(content: "", size: 60, color: .black)
+    @State private var isProgressViewShown = false
     @FocusState private var isFocused: Bool
     
     var body: some View {
         VStack(alignment: .center) {
             ZStack {
-                // todo 이미지 추가
+                if isProgressViewShown {
+                    ProgressView()
+                }
+                LoadableImage(isLoading: $isProgressViewShown, imageMetadata: fetcher.currentPanda)
                 
                 TextField("meme", text: $text.content, prompt: Text("input text"))
                     .focused($isFocused)
@@ -52,7 +57,10 @@ struct MemeCreator: View {
             
             HStack {
                 Button {
-                    
+                    isProgressViewShown = true
+                    if let image = fetcher.imageData.sample.randomElement() {
+                        fetcher.currentPanda = image
+                    }
                 } label: {
                     VStack {
                         Image(systemName: "photo.on.rectangle.angled")
@@ -85,10 +93,17 @@ struct MemeCreator: View {
             //.frame(maxHeight: 180, alignment: .center)
             
         }
+        .task {
+            do {
+                try await fetcher.fetchData()
+            } catch {
+                print(error)
+            }
+        }
         .navigationTitle("Meme Creator")
     }
 }
 
 #Preview {
-    MemeCreator()
+    MemeCreator().environmentObject(ImageFetcher())
 }
