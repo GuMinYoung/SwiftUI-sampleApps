@@ -20,7 +20,7 @@ struct GestureRowView: View {
                 Image(systemName: info.systemImage)
                     .frame(width: 30)
                     .font(.title)
-                    .foregroundColor(.accentColor)
+                    .foregroundStyle(Color.accentColor)
                 
                 VStack(alignment: .leading) {
                     Text(info.title)
@@ -28,7 +28,7 @@ struct GestureRowView: View {
                         .fontWeight(.bold)
                         .padding(.bottom, 2)
                     Text(info.description)
-                        .foregroundColor(.secondary)
+                        .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }.padding(10)
             }
