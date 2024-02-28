@@ -22,7 +22,7 @@ struct TapView: View, IncludeGesture {
     
     var body: some View {
         VStack {
-            Text("사각형을 탭하여 색상 변경")
+            Text("사각형을 탭 하면 색상 변경")
             Spacer()
             Rectangle()
                 .foregroundStyle(color)

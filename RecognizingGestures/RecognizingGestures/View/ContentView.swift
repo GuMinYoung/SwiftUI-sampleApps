@@ -14,6 +14,9 @@ struct ContentView: View {
                 NavigationLink(destination: TapView()) {
                     GestureRowView(with: GestureType.tap.rowInfo)
                 }
+                NavigationLink(destination: LongPressView()) {
+                    GestureRowView(with: GestureType.touchAndHold.rowInfo)
+                }
             }.navigationTitle("Gestures")
         }
     }
