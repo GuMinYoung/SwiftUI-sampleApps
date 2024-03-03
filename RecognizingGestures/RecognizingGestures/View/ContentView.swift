@@ -17,10 +17,21 @@ struct ContentView: View {
                 NavigationLink(destination: LongPressView()) {
                     GestureRowView(with: GestureType.touchAndHold.rowInfo)
                 }
+                NavigationLink(destination: DragView()) {
+                    GestureRowView(with: GestureType.drag.rowInfo)
+                }
+                NavigationLink(destination: RotateView()) {
+                    GestureRowView(with: GestureType.rotate.rowInfo)
+                }
+                NavigationLink(destination: SingleLineView()) {
+                    GestureRowView(with: GestureType.lineDrawing.rowInfo)
+                }
             }.navigationTitle("Gestures")
         }
     }
 }
+
+
 
 #Preview {
     ContentView()

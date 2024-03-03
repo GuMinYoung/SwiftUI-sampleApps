@@ -18,8 +18,7 @@ struct LongPressView: View, IncludeGesture {
                 withAnimation {
                     let width = Int.random(in: 50..<250)
                     let height = Int.random(in: 50..<250)
-                        self.size = CGSize(width: width, height: height)
-                    
+                    self.size = CGSize(width: width, height: height)
                 }
             }
     }

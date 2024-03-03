@@ -30,7 +30,7 @@ enum GestureType {
     }
     
     var navigationTitle: String {
-        String(describing: self).capitalized    // 케이스명의 맨 앞 문자를 대문자로
+        rowInfo.title
     }
 }
 
